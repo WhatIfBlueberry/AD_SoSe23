@@ -1,9 +1,9 @@
 import math
 
 def sieb(k):
-    table = [x for x in range(2, k+1)]
-    table2 = [x for x in range(2, k+1)]
-    pointer = 2
+    table = [x for x in range(3, k+1, 2)]
+    table2 = [x for x in range(3, k+1, 2)]
+    pointer = 3
     count = 1
     while pointer < int(math.sqrt(k+1)):
         for x in table:
