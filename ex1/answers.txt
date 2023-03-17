@@ -1,0 +1,7 @@
+Frage: Ergänzen Sie eine rekursive Implementierung des Algorithmus. Welchen Algorithmus halten Sie wann für sinnvoller?
+
+Antwort: Für kleine Zahlen ist die rekursive Implementierung sinnvoll, da sie weniger Speicherplatz benötigt. Für große Zahlen ist die iterative Implementierung besser geeignet, da sie weniger Rechenzeit benötigt.
+
+Frage:  Geben Sie f ̈ur a, b ∈ {30, . . . , 40} die Werte kgV(a, b), ggT(a, b) und a · b aus. Was f ̈allt Ihnen auf?
+
+Antwort: a * b = kgV(a, b) * ggT(a, b)
