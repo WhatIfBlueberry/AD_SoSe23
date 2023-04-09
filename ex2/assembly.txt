@@ -1,16 +1,34 @@
+// Akku auf 0
 0600
+// Akku -> [2]
 0702
+// Akku auf 1
 0601
+// Akku -> [3]
 0703
+// Input -> [1]
 0801
+// [1] -> Akku
 0501
-0C16
+// Jump to out if zero
+0C32
+// Multiply with [1]
 0301
+// .. do it again
 0301
+// Add [2]
 0102
+// Store sum in [2]
 0702
+// Lade aus [1]
 0501
+// Subtract [3]
 0203
+// Save to [1]
 0701
-0B07
+// Jump to line 14
+0B14
+// Output [2] (result)
 0902
+// halt
+0A99

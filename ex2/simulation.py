@@ -29,6 +29,7 @@ while i < len(lines):
     value = line[2:]
     # If the command is a comment, skip it
     if command == "//":
+        i = i + 1
         continue
     if command == Command.ADD.value:
         print("Adding " + str(registers[int(value) - 1]) + " to " + str(akkumulator))
@@ -52,7 +53,7 @@ while i < len(lines):
         print("Inputing value into register " + str(value))
         registers[int(value) - 1] = int(input("Input: "))
     if command == Command.OUT.value:
-        print(registers[int(value) - 1])
+        print("*machine noise*", "the result equals:",registers[int(value) - 1])
     if command == Command.HALT.value:
         print("Halting")
         break
